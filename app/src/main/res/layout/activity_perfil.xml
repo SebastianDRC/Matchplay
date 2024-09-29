@@ -37,8 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/person"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="110dp" />
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="92dp" />
 
     <ImageView
         android:id="@+id/imageView7"
