@@ -16,48 +16,29 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="72dp"
-        android:background="#00FFFFFF"
-        android:shadowColor="#00941313"
-        android:text="MatchPlay!"
-        android:textAlignment="inherit"
-        android:textColor="#FFFEFE"
-        android:textSize="38sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="253dp"
-        android:layout_height="45dp"
-        app:srcCompat="@drawable/fondo_escribir"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="229dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="253dp"
-        android:layout_height="45dp"
-        app:srcCompat="@drawable/fondo_escribir"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="334dp" />
-
-    <Button
-        android:id="@+id/iniciar_app"
-        android:layout_width="133dp"
-        android:layout_height="39dp"
-        android:background="@color/azul_claro"
-        android:backgroundTint="@color/azul_claro"
-        android:backgroundTintMode="screen"
-        android:text="Iniciar"
+        android:src="@drawable/matchplay_"
         tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="437dp" />
+        tools:layout_editor_absoluteY="136dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="253dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/fondo_escribir"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="253dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/fondo_escribir"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="418dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
