@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Crear_cuenta">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil_fondo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="299dp"
+        android:layout_height="46dp"
+        app:srcCompat="@drawable/fondo_escribir"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="299dp"
+        android:layout_height="46dp"
+        app:srcCompat="@drawable/fondo_escribir"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/person"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nombre"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/edad"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cerrar_sesi_n"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="684dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/eliminar_cuenta"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="684dp" />
