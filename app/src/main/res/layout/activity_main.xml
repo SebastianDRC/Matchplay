@@ -19,7 +19,7 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="253dp"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginTop="60dp"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
@@ -28,10 +28,10 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:gravity="center"
-        android:layout_width="253dp"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginTop="64dp"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:srcCompat="@drawable/fondo_escribir"
         tools:layout_editor_absoluteX="65dp" />
@@ -39,7 +39,7 @@
     <Button
         android:id="@+id/iniciar_app"
         android:gravity="center"
-        android:layout_width="133dp"
+        android:layout_width="match_parent"
         android:layout_height="39dp"
         android:background="@color/azul_claro"
         android:backgroundTint="@color/azul_claro"
@@ -50,7 +50,7 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         app:layout_constraintTop_toTopOf="parent"
