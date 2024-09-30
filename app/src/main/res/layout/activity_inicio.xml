@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:backgroundTintMode="screen"
     android:foregroundTint="#870909"
-    tools:context="inicio">
+    tools:context="Inicio">
 
     <ImageView
         android:id="@+id/imageView5"
