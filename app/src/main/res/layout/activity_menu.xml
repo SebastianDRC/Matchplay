@@ -13,20 +13,23 @@
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginEnd="9dp"
         android:gravity="center"
         android:scaleType="centerCrop"
         android:src="@drawable/fondo_menu"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="-13dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="63dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="61dp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,18 +38,33 @@
         app:srcCompat="@drawable/cuadro_1__login_" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="631dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="565dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView8"
-        app:srcCompat="@drawable/tus_deportes_y_comunidades" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ping_pong" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="565dp"
+        android:scrollbarSize="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/futsal_femenino" />
 
     <ImageView
         android:id="@+id/imageView20"
@@ -62,36 +80,165 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rectangle_13" />
 
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="316dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/basquetbol" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="323dp"
+        android:layout_marginBottom="316dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rugby" />
+
     <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/person__1_"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="668dp" />
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="669dp"
+        android:layout_marginEnd="303dp"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="#C2D7EE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/person__1_" />
 
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/plus"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="668dp" />
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="668dp"
+        android:layout_marginEnd="213dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#C2D7EE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plus" />
 
     <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/search"
-        tools:layout_editor_absoluteX="306dp"
-        tools:layout_editor_absoluteY="666dp" />
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="666dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#C2D7EE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search" />
 
     <ImageButton
         android:id="@+id/imageButton9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/gmail_groups"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="666dp" />
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="666dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#C2D7EE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gmail_groups" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="641dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/deportes_y_comunidades__1_" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="160dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="223dp"
+        android:layout_marginBottom="380dp"
+        android:backgroundTint="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagen_2024_09_18_231818534" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="157dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="380dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagen_2024_09_18_231937093" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="169dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="431dp"
+        android:layout_marginEnd="214dp"
+        android:layout_marginBottom="123dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagen_2024_09_18_233006229" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="157dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="431dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="124dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagen_2024_09_18_233126077" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
