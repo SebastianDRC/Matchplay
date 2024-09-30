@@ -44,7 +44,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.095"
-        app:srcCompat="@drawable/Crea_tu_propia_comunidad" />
+        app:srcCompat="@drawable/crea_tu_propia_comunidad" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -54,8 +54,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.036"
-        app:srcCompat="@drawable/Ellipse" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ellipse" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -88,7 +88,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:srcCompat="@drawable/Rectangle" />
+        app:srcCompat="@drawable/rectangle" />
 
     <TextView
         android:id="@+id/textView4"
@@ -149,7 +149,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258"
+        app:layout_constraintVertical_bias="0.206"
         app:srcCompat="@drawable/photo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
