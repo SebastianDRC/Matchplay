@@ -9,6 +9,7 @@
 
     <ImageView
         android:id="@+id/imageView5"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
@@ -18,6 +19,7 @@
 
     <ImageView
         android:id="@+id/imageView6"
+        android:gravity="center"
         android:layout_width="299dp"
         android:layout_height="46dp"
         app:srcCompat="@drawable/fondo_escribir"
@@ -25,7 +27,7 @@
         tools:layout_editor_absoluteY="387dp" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageView7"
         android:layout_width="299dp"
         android:layout_height="46dp"
         app:srcCompat="@drawable/fondo_escribir"
@@ -33,7 +35,7 @@
         tools:layout_editor_absoluteY="502dp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/person"
@@ -41,7 +43,7 @@
         tools:layout_editor_absoluteY="92dp" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/nombre"
@@ -49,7 +51,7 @@
         tools:layout_editor_absoluteY="354dp" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imageView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/edad"
@@ -57,7 +59,7 @@
         tools:layout_editor_absoluteY="470dp" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/cerrar_sesi_n"
@@ -65,7 +67,7 @@
         tools:layout_editor_absoluteY="684dp" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/imageView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/eliminar_cuenta"
