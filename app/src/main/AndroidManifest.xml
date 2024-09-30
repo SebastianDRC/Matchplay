@@ -13,22 +13,19 @@
         android:theme="@style/Theme.Matchplay"
         tools:targetApi="31">
         <activity
+            android:name=".Crear_cuenta"
+            android:exported="false" />
+        <activity
             android:name=".perfil"
             android:exported="false" />
         <activity
             android:name=".Menu"
             android:exported="false" />
         <activity
-            android:name=".crear_cuent"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".inicio"
-            android:exported="false" />
-        <activity
-            android:name=".Crear_cuenta"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
