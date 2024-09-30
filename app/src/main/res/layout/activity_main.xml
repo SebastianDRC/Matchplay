@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/fondo"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -32,21 +32,25 @@
         android:layout_height="45dp"
         android:layout_marginTop="64dp"
         android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:srcCompat="@drawable/fondo_escribir"
-        tools:layout_editor_absoluteX="65dp" />
+        app:srcCompat="@drawable/fondo_escribir" />
 
     <Button
         android:id="@+id/iniciar_app"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="39dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="64dp"
         android:background="@color/azul_claro"
         android:backgroundTint="@color/azul_claro"
         android:backgroundTintMode="screen"
+        android:gravity="center"
         android:text="Iniciar"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="437dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -56,6 +60,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/matchplay_"
         tools:layout_editor_absoluteX="103dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="80dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="80dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
