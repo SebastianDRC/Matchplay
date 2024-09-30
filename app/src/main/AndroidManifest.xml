@@ -19,6 +19,12 @@
             android:name=".Menu"
             android:exported="false" />
         <activity
+            android:name=".Editar_Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Tus_Comunidades"
+            android:exported="false" />
+        <activity
             android:name=".crear_cuent"
             android:exported="false" />
         <activity
