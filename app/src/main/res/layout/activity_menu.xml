@@ -96,7 +96,7 @@
         app:srcCompat="@drawable/search" />
 
     <ImageButton
-        android:id="@+id/comunidad_nueva"
+        android:id="@+id/crearcomunidades"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="230dp"

@@ -45,10 +45,12 @@
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:srcCompat="@drawable/person"
-        tools:layout_editor_absoluteX="124dp" />
+        app:srcCompat="@drawable/person" />
 
     <ImageView
         android:id="@+id/imageView9"
