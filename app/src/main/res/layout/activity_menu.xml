@@ -3,10 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_height="match_parent"
     android:scrollbarDefaultDelayBeforeFade="20"
-    android:scrollbarFadeDuration="20"
-    tools:context=".Menu">
+    android:scrollbarFadeDuration="20">
 
     <ImageView
         android:id="@+id/imageView5"
