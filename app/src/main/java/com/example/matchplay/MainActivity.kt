@@ -12,10 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        val button = findViewById<Button>(R.id.iniciar_app)
+        val buttoniniciar_app = findViewById<Button>(R.id.iniciar_app)
 
-        button.setOnClickListener{
+        buttoniniciar_app.setOnClickListener{
             val intent = Intent(this,Menu::class.java)
+            startActivity(intent)
+        }
+        val buttonregistrar = findViewById<Button>(R.id.registrar)
+
+        buttonregistrar.setOnClickListener{
+            val intent = Intent(this,Registrar_cuenta::class.java)
             startActivity(intent)
         }
         }
