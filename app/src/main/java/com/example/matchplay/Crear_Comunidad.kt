@@ -20,10 +20,11 @@ class Crear_Comunidad : AppCompatActivity() {
             val intent = Intent(this, Menu::class.java)
             startActivity(intent)
 
-            val nameEditText = findViewById<EditText>(R.id.editTextText1)
-            val sportEditText = findViewById<EditText>(R.id.editTextText2)
-            val descriptionEditText = findViewById<EditText>(R.id.editTextText3)
-            val createButton = findViewById<Button>(R.id.button55)
+            }
+        val nameEditText = findViewById<EditText>(R.id.editTextText1)
+        val sportEditText = findViewById<EditText>(R.id.editTextText2)
+        val descriptionEditText = findViewById<EditText>(R.id.editTextText3)
+        val createButton = findViewById<Button>(R.id.button2)
 
             createButton.setOnClickListener {
                 val name = nameEditText.text.toString()
@@ -31,16 +32,16 @@ class Crear_Comunidad : AppCompatActivity() {
                 val description = descriptionEditText.text.toString()
 
                 if (name.isNotEmpty() && sport.isNotEmpty() && description.isNotEmpty()) {
-                    // Log para verificar que el botón ha sido presionado y los valores capturados
-                    Log.d(
-                        "MainActivity",
-                        "Datos: Nombre=$name, Deporte=$sport, Descripción=$description"
-                    )
+                    Log.d("MainActivity", "Datos: Nombre=$name, Deporte=$sport, Descripción=$description")
 
                     val intent = Intent(this, Tus_Comunidades::class.java)
                     intent.putExtra("EXTRA_NAME", name)
                     intent.putExtra("EXTRA_SPORT", sport)
                     intent.putExtra("EXTRA_DESCRIPTION", description)
                     startActivity(intent)
+                } else {
+                    Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
                 }
-            }}}}
+            }
+        }
+    }

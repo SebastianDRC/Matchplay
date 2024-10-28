@@ -14,20 +14,8 @@
         android:gravity="center"
         android:scaleType="centerCrop"
         android:src="@drawable/fondo_menu"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="58dp" />
-
-    <ImageView
-        android:id="@+id/imageView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/cuadro_1__login_"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="-13dp" />
 
     <ImageButton
         android:id="@+id/iniciarlogin25"
@@ -45,7 +33,14 @@
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="?attr/homeAsUpIndicator" />
 
-
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:srcCompat="@drawable/cuadro_1__login_"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="62dp" />
 
     <TextView
         android:id="@+id/nameTextView"
@@ -81,8 +76,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="26dp" />
+        tools:layout_editor_absoluteX="41dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

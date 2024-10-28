@@ -190,17 +190,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView13"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/button55"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Crear"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
-
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="100dp"
@@ -220,5 +209,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="687dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

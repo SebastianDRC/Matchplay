@@ -19,9 +19,9 @@ class Tus_Comunidades : AppCompatActivity() {
         val button = findViewById<ImageButton>(R.id.iniciarlogin25)
 
         button.setOnClickListener {
-            val intent = Intent(this,Menu::class.java)
+            val intent = Intent(this, Menu::class.java)
             startActivity(intent)
-
+        }
         // Obtener los datos pasados desde MainActivity
         val name = intent.getStringExtra("EXTRA_NAME")
         val sport = intent.getStringExtra("EXTRA_SPORT")
@@ -35,4 +35,4 @@ class Tus_Comunidades : AppCompatActivity() {
         findViewById<TextView>(R.id.sportTextView).text = "Deporte: $sport"
         findViewById<TextView>(R.id.descriptionTextView).text = "Descripción: $description"
     }
-}}
+}
