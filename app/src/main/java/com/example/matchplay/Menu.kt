@@ -16,7 +16,7 @@ class Menu : AppCompatActivity() {
             val intent = Intent(this,Perfil::class.java)
             startActivity(intent)
         }
-        val buttoncomunidad= findViewById<ImageButton>(R.id.crearcomunidades)
+        val buttoncomunidad= findViewById<ImageButton>(R.id.imageButton7)
         buttoncomunidad.setOnClickListener{
             val intent = Intent(this,Crear_Comunidad::class.java)
             startActivity(intent)

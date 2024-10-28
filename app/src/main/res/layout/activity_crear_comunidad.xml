@@ -15,8 +15,8 @@
         android:gravity="center"
         android:scaleType="centerCrop"
         android:src="@drawable/crea_comunidad"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="-13dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <ImageButton
         android:id="@+id/iniciarlogin"
@@ -38,7 +38,10 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#00DE2121"
+        android:backgroundTint="#00262222"
         android:src="@drawable/crea_tu_comunidad"
+        android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
@@ -149,7 +152,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206"
+        app:layout_constraintVertical_bias="0.245"
         app:srcCompat="@drawable/photo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
