@@ -17,7 +17,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/crea_comunidad"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-56dp" />
+        tools:layout_editor_absoluteY="-16dp" />
 
     <ImageButton
         android:id="@+id/iniciarlogin"
@@ -114,28 +114,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <EditText
         android:id="@+id/editTextText2"
-        android:layout_width="240dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="46dp"
-        android:layout_marginEnd="99dp"
-        android:layout_marginBottom="285dp"
+        android:layout_width="241dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="101dp"
         android:backgroundTint="#00C81111"
         android:ems="10"
         android:foregroundTint="#00FFFFFF"
         android:hint=""
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editTextText1" />
 
     <EditText
         android:id="@+id/editTextText3"
-        android:layout_width="240dp"
-        android:layout_height="47dp"
+        android:layout_width="238dp"
+        android:layout_height="36dp"
         android:layout_marginStart="98dp"
         android:layout_marginTop="49dp"
         android:layout_marginEnd="103dp"
@@ -146,8 +144,10 @@
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView4"
@@ -191,7 +191,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button55"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Crear"
