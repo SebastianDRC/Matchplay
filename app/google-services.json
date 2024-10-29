@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "647145296412",
+    "project_id": "matchplay-6e89a",
+    "storage_bucket": "matchplay-6e89a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647145296412:android:d4e6ebafc963bc83e205d9",
+        "android_client_info": {
+          "package_name": "com.example.matchplay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVvTJR5OuxOiXWG967hEy27qjqSkwPtig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
