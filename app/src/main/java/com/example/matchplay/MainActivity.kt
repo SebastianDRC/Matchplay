@@ -21,7 +21,9 @@ class MainActivity : AppCompatActivity() {
         val email = findViewById<EditText>(R.id.email_et)
         val password = findViewById<EditText>(R.id.password_et)
         login_btn.setOnClickListener {
-            auth.signInWithEmailAndPassword(email.toString(), password.toString())
+            val email = email.text.toString()
+            val password = password.text.toString()
+            auth.signInWithEmailAndPassword(email, password)
                 .addOnSuccessListener {
                     val intent = Intent(this, Menu::class.java)
                     startActivity(intent)
