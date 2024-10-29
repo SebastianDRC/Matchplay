@@ -8,7 +8,7 @@
     tools:context=".Tus_Comunidades">
 
     <ImageView
-        android:id="@+id/imageView18"
+        android:id="@+id/imageView19"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -17,18 +17,66 @@
         tools:layout_editor_absoluteX="31dp"
         tools:layout_editor_absoluteY="-13dp" />
 
+    <ImageButton
+        android:id="@+id/iniciarlogin25"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#FFFFFF"
+        android:rotationX="-360"
+        android:rotationY="-360"
+        app:circularflow_angles="60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
     <ImageView
         android:id="@+id/imageView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView18"
-        app:srcCompat="@drawable/cuadro_1__login_" />
+        app:srcCompat="@drawable/cuadro_1__login_"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="62dp" />
 
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Nombre:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/sportTextView"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/sportTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTextView"
+        android:layout_marginTop="247dp"
+        android:layout_marginBottom="460dp"
+        android:text="Deporte:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sportTextView"
+        android:layout_marginTop="178dp"
+        android:layout_marginBottom="529dp"
+        android:text="Descripción:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="41dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
