@@ -21,18 +21,12 @@ class Tus_Comunidades : AppCompatActivity() {
         button.setOnClickListener {
             val intent = Intent(this, Menu::class.java)
             startActivity(intent)
+
         }
-        // Obtener los datos pasados desde MainActivity
-        val name = intent.getStringExtra("EXTRA_NAME")
-        val sport = intent.getStringExtra("EXTRA_SPORT")
-        val description = intent.getStringExtra("EXTRA_DESCRIPTION")
+        val buttone = findViewById<ImageButton>(R.id.imageButton2)
 
-        // Log para verificar los datos recibidos
-        Log.d("CommunityDetailActivity", "Datos recibidos: Nombre=$name, Deporte=$sport, Descripción=$description")
-
-        // Mostrar los datos en los TextViews
-        findViewById<TextView>(R.id.nameTextView).text = "Nombre: $name"
-        findViewById<TextView>(R.id.sportTextView).text = "Deporte: $sport"
-        findViewById<TextView>(R.id.descriptionTextView).text = "Descripción: $description"
-    }
-}
+        buttone.setOnClickListener {
+            val intent = Intent(this, Crear_Comunidad::class.java)
+            startActivity(intent)
+        }
+    }}
