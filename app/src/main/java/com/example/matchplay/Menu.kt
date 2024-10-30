@@ -26,5 +26,11 @@ class Menu : AppCompatActivity() {
             val intent = Intent(this, Tus_Comunidades::class.java)
             startActivity(intent)
         }
+        val buttonbusqueda = findViewById<ImageButton>(R.id.imageButton8)
+        buttonbusqueda.setOnClickListener{
+            val intent = Intent(this, Busqueda::class.java)
+            startActivity(intent)
+
+        }
     }
 }

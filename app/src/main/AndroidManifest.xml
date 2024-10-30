@@ -25,6 +25,9 @@
             android:name=".comunidadrecycler"
             android:exported="false" />
         <activity
+            android:name=".Busqueda"
+            android:exported="false" />
+        <activity
             android:name=".Registrar_cuenta"
             android:exported="false" />
         <activity

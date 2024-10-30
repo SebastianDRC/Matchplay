@@ -36,19 +36,19 @@ class Registrar_cuenta : AppCompatActivity() {
                         .setDisplayName(nombre)
                         .build()
 
-                        it.user!!.updateProfile(profile)
-                            .addOnSuccessListener {
-                                AlertDialog.Builder(this).apply {
-                                    setTitle("Cuenta Creada")
-                                    setMessage("Tu cuenta ha sido creada correctamente")
-                                    setPositiveButton("aceptar"){ _: DialogInterface, _: Int ->
-                                        finish()
-                                    }
-                                }.show()
-                            }
-                            .addOnFailureListener {
-                                Utils.showError(this,it.message.toString())
-                            }
+                    it.user!!.updateProfile(profile)
+                        .addOnSuccessListener {
+                            AlertDialog.Builder(this).apply {
+                                setTitle("Cuenta Creada")
+                                setMessage("Tu cuenta ha sido creada correctamente")
+                                setPositiveButton("aceptar"){ _: DialogInterface, _: Int ->
+                                    finish()
+                                }
+                            }.show()
+                        }
+                        .addOnFailureListener {
+                            Utils.showError(this,it.message.toString())
+                        }
                 }
                 .addOnFailureListener {
                     Utils.showError(this,it.message.toString())
