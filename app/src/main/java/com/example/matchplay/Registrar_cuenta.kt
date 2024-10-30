@@ -25,10 +25,6 @@ class Registrar_cuenta : AppCompatActivity() {
         val email = findViewById<EditText>(R.id.email_et)
         val password = findViewById<EditText>(R.id.password_et)
         val nombre = findViewById<EditText>(R.id.nombre)
-        return_main_btn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
         create_btn.setOnClickListener {
             val email = email.text.toString()
             val password = password.text.toString()
@@ -57,6 +53,10 @@ class Registrar_cuenta : AppCompatActivity() {
                 .addOnFailureListener {
                     Utils.showError(this,it.message.toString())
                 }
+        }
+        return_main_btn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
