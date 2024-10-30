@@ -20,6 +20,11 @@ class MainActivity : AppCompatActivity() {
         val login_btn = findViewById<Button>(R.id.login_btn)
         val email = findViewById<EditText>(R.id.email_et)
         val password = findViewById<EditText>(R.id.password_et)
+        val buttonregistrar = findViewById<Button>(R.id.registrar_cuenta_btn)
+        buttonregistrar.setOnClickListener {
+            val intent = Intent(this, Registrar_cuenta::class.java)
+            startActivity(intent)
+        }
         login_btn.setOnClickListener {
             val email = email.text.toString()
             val password = password.text.toString()
@@ -30,18 +35,8 @@ class MainActivity : AppCompatActivity() {
                     finish()
                 }
                 .addOnFailureListener {
-                    AlertDialog.Builder(this).apply {
-                        setTitle("Error")
-                        setMessage(it.message)
-                        setPositiveButton("Aceptar", null)
-                    }.show()
+                    Utils.showError(this,it.message.toString())
                 }
-            val buttonregistrar = findViewById<Button>(R.id.registrar_cuenta_btn)
-
-            buttonregistrar.setOnClickListener {
-                val intent = Intent(this, Registrar_cuenta::class.java)
-                startActivity(intent)
-            }
         }
     }
 }
