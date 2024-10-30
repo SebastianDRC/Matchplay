@@ -82,6 +82,5 @@ class Perfil : AppCompatActivity() {
             }
     }
 
-    // Clase vacía de LoginActivity
 
 }
