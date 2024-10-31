@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,267 +9,184 @@
     android:background="@drawable/crea_comunidad"
     tools:context=".Crear_Comunidad">
 
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:scaleType="centerCrop"
         android:src="@drawable/crea_comunidad"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
-        android:id="@+id/textView55"
+        android:id="@+id/comunidadTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="512dp"
-        android:layout_marginEnd="283dp"
-        android:layout_marginBottom="200dp"
-        android:text="Descripcion"
-        android:textColor="#EFEDED"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Crea tu comunidad"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="360dp"
-        android:layout_height="118dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView55"
-        app:srcCompat="@drawable/rectangle" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="360dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/fondo_escribir" />
+        android:layout_marginTop="72dp"
+        android:textStyle="bold"/>
 
     <ImageButton
         android:id="@+id/iniciarlogin"
         android:layout_width="46dp"
         android:layout_height="42dp"
         android:backgroundTint="#FFFFFF"
-        android:rotationX="-360"
-        android:rotationY="-360"
-        app:circularflow_angles="60"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="?attr/homeAsUpIndicator" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"/>
 
+    <ImageButton
+        android:id="@+id/fotoComunidad"
+        android:layout_width="142dp"
+        android:layout_height="123dp"
+        app:srcCompat="@drawable/photo"
+        app:layout_constraintTop_toBottomOf="@+id/comunidadTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <TextView
+        android:id="@+id/seleccionaTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="59dp"
-        android:background="#00DE2121"
-        android:backgroundTint="#00262222"
-        android:src="@drawable/crea_tu_comunidad"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Selecciona una imagen"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/fotoComunidad"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iniciarlogin" />
-
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="360dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="14dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView113"
-        app:srcCompat="@drawable/fondo_escribir" />
-
-    <ImageView
-        android:id="@+id/imageView113"
-        android:layout_width="360dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="17dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/fondo_escribir" />
-
-    <EditText
-        android:id="@+id/editTextText1"
-        android:layout_width="228dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginEnd="82dp"
-        android:layout_marginBottom="44dp"
-        android:backgroundTint="#00FFFFFF"
-        android:ems="10"
-        android:hint=""
-        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.883" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="243dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="89dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginBottom="48dp"
-        android:backgroundTint="#00C81111"
-        android:ems="10"
-        android:foregroundTint="#00FFFFFF"
-        android:hint=""
-        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="225dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginEnd="82dp"
-        android:layout_marginBottom="40dp"
-        android:backgroundTint="#00BD0606"
-        android:ems="10"
-        android:hint=""
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextText99"
-        android:layout_width="225dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="82dp"
-        android:backgroundTint="#00BD0606"
-        android:ems="10"
-        android:hint=""
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+        android:layout_marginTop="8dp"/>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="304dp"
-        android:layout_marginBottom="64dp"
         android:text="Nombre"
         android:textColor="#EFEDED"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/seleccionaTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="56dp"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#00FFFFFF"
+        android:hint="Nombre de la Comunidad"
+        android:textColorHint="#F2EFEF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:backgroundTint="#E7E7E7" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        android:layout_marginEnd="305dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="12dp"
         android:text="Deporte"
         android:textColor="#EFEDED"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <EditText
+        android:id="@+id/deporte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#00C81111"
+        android:hint="Deporte de la Comunidad"
+        android:textColorHint="#FBF9F9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:backgroundTint="#E7E7E7"/>
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="432dp"
-        android:layout_marginEnd="267dp"
-        android:layout_marginBottom="60dp"
         android:text="Nombre Autor"
         android:textColor="#EFEDED"
-        app:layout_constraintBottom_toTopOf="@+id/textView55"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deporte"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="56dp"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
 
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/nombreAutor"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="167dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="17dp"
-        android:text="Crear"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#00BD0606"
+        android:hint="Nombre del Autor"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="142dp"
-        android:layout_height="123dp"
-        android:layout_marginStart="134dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="135dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/photo" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="8dp"
+        tools:backgroundTint="#E7E7E7"
+        android:textColorHint="#F2EFEF"/>
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción para la comunidad"
+        android:textColor="#EFEDED"
+        app:layout_constraintTop_toBottomOf="@+id/nombreAutor"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="56dp"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextText99"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00BD0606"
+        android:hint="Descripción de la Comunidad"
+        app:layout_constraintTop_toBottomOf="@+id/textView55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="8dp"
+        tools:backgroundTint="#E7E7E7"
+        android:textColorHint="#F2EFEF"/>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="118dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="123dp"
-        android:layout_marginEnd="149dp"
-        android:backgroundTint="#C1D5ED"
-        android:text="Seleccione su imagen"
-        android:textSize="8sp"
+        android:id="@+id/crearComunidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Crear"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButton" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editTextText99" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

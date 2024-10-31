@@ -24,10 +24,10 @@ class Crear_Comunidad : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_comunidad)
 
-        val etCommunityName = findViewById<EditText>(R.id.editTextText1)
-        val etSport = findViewById<EditText>(R.id.editTextText2)
-        val etUsername = findViewById<EditText>(R.id.editTextText3)
-        val btnCreateCommunity = findViewById<Button>(R.id.button2)
+        val etCommunityName = findViewById<EditText>(R.id.nombre)
+        val etSport = findViewById<EditText>(R.id.deporte)
+        val etUsername = findViewById<EditText>(R.id.nombreAutor)
+        val btnCreateCommunity = findViewById<Button>(R.id.crearComunidad)
 
         btnCreateCommunity.setOnClickListener {
             val communityName = etCommunityName.text.toString()
