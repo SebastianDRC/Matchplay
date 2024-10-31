@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="375dp"
+        android:layout_height="582dp"
         android:layout_marginStart="11dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="11dp"
@@ -33,6 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
         app:srcCompat="@drawable/cuadro_1__login_" />
 
     <ImageView
@@ -122,5 +123,107 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/deportes_y_comunidades__1_" />
+
+    <ImageButton
+        android:id="@+id/iniciarlogin25"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <!-- Imagen central -->
+
+    <!-- Botón adicional -->
+
+    <!-- Tarjeta decorativa transparente -->
+
+
+
+    <!-- Layout interno -->
+
+    <!-- Imagen inferior -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="133dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="76dp"
+        android:background="#56000000"
+        android:backgroundTint="#1043C3"
+        android:foregroundTint="#A91919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16">
+
+        <!-- Nombre de usuario -->
+
+        <!-- Campo de fecha -->
+
+        <!-- Botón adicional con icono -->
+
+        <!-- Imagen del perfil -->
+
+        <!-- Texto de ejemplo -->
+
+        <TextView
+            android:id="@+id/textView122"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="Nombre"
+            android:textColor="#F8F8F8"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.62"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="56dp"
+            android:ems="10"
+            android:hint="Fecha"
+            android:inputType="date"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FDFCFC"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="39dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="#00925555"
+            android:tint="#2196F3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editTextDate"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Usuario"
+            android:textColor="#F4EFEF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

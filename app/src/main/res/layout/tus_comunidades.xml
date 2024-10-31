@@ -38,17 +38,19 @@
         app:srcCompat="?attr/homeAsUpIndicator" />
 
     <!-- Imagen central -->
+
+    <!-- Botón adicional -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="395dp"
         android:layout_height="592dp"
         android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cuadro_1__login_" />
 
-    <!-- Botón adicional -->
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
@@ -73,98 +75,5 @@
     <!-- Layout interno -->
 
     <!-- Imagen inferior -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="165dp"
-        android:layout_height="124dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="96dp"
-        android:background="#0A000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16">
-
-        <!-- Nombre de usuario -->
-        <TextView
-            android:id="@+id/textView122"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Nombre"
-            android:textColor="#F8F8F8"
-            android:textSize="18sp"
-            android:textStyle="bold|italic"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <!-- Campo de fecha -->
-
-        <!-- Botón adicional con icono -->
-
-        <!-- Imagen del perfil -->
-
-        <!-- Texto de ejemplo -->
-
-        <EditText
-            android:id="@+id/editTextDate"
-            android:layout_width="61dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="56dp"
-            android:ems="10"
-            android:hint="Fecha"
-            android:inputType="date"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textColorLink="#FDFCFC"
-            android:textSize="15dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView122" />
-
-        <ImageButton
-            android:id="@+id/imageButton9"
-            android:layout_width="39dp"
-            android:layout_height="27dp"
-            android:layout_marginTop="4dp"
-            android:backgroundTint="#00925555"
-            android:tint="#2196F3"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-            app:srcCompat="@android:drawable/ic_input_add"
-            tools:layout_editor_absoluteX="125dp" />
-
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="96dp"
-            android:layout_height="81dp"
-            android:layout_marginStart="4dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView122"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.067"
-            app:srcCompat="@drawable/photo" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textColor="#F4EFEF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView122" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="580dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/deportes_y_comunidades__1_" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

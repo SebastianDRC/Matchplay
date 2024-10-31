@@ -17,14 +17,14 @@ class ControlPost(
 ) : RecyclerView.Adapter<ControlPost.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
-        val nombreComu0: TextView = view.findViewById(R.id.textView122)
-        val imagen1: ImageButton = view.findViewById(R.id.imageButton4)
-        val date2: TextView = view.findViewById(R.id.editTextDate)
-        val username3: TextView = view.findViewById(R.id.textView)
+        val nombreComu: TextView = view.findViewById(R.id.textView122)
+        //val imagen1: ImageButton = view.findViewById(R.id.imageButton4)
+        val date: TextView = view.findViewById(R.id.editTextDate)
+        val username: TextView = view.findViewById(R.id.textView)
 }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val layout = LayoutInflater.from(parent.context).inflate(R.layout.tus_comunidades, parent, false)
+        val layout = LayoutInflater.from(parent.context).inflate(R.layout.activity_menu, parent, false)
         return ViewHolder(layout)
     }
 
@@ -34,15 +34,15 @@ class ControlPost(
         val post = dataset[position]
 
         // Asigna el nombre de la comunidad y la imagen al ViewHolder
-        holder.nombreComu0.text = post.comuniName
-        holder.imagen1.setImageDrawable(post.imagen)
+        holder.nombreComu.text = post.comuniName
+       // holder.imagen1.setImageDrawable(post.imagen)
 
         // Formatear y asignar la fecha
         val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-        holder.date2.text = sdf.format(post.date)
+        holder.date.text = sdf.format(post.date)
 
         // Asegúrate de usar estos elementos según lo necesites
-        holder.username3.text = post.username // Ejemplo de asignación
+        holder.username.text = post.username // Ejemplo de asignación
 
     }
 }
