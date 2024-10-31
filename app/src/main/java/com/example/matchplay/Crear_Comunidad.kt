@@ -28,18 +28,15 @@ class Crear_Comunidad : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var db: FirebaseFirestore
     private lateinit var storage: FirebaseStorage
-    private lateinit var nameTextView: TextView
     private var selectedImageUri: Uri? = null
 
     // Configuración para seleccionar una imagen
     private val pickMedia = registerForActivityResult(ActivityResultContracts.PickVisualMedia()) { uri ->
-        if (uri != null) {
+        uri?.let {
             Log.i("SeleccionarImagen", "Imagen seleccionada: $uri")
             selectedImageUri = uri
-            resizeAndUploadImage(uri) // Llama al método de redimensionamiento
-        } else {
-            Log.i("SeleccionarImagen", "No se seleccionó ninguna imagen")
-        }
+            resizeAndUploadImage(uri)
+        } ?: Log.i("SeleccionarImagen", "No se seleccionó ninguna imagen")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,49 +44,46 @@ class Crear_Comunidad : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_crear_comunidad)
 
-        // Inicializar Firebase Auth, Firestore y Storage
-        auth = FirebaseAuth.getInstance()
-        db = FirebaseFirestore.getInstance()
-        storage = FirebaseStorage.getInstance()
+        initializeFirebase() // Firebase initialization
 
-        // Habilitar persistencia offline para Firestore
-        db.firestoreSettings = FirebaseFirestoreSettings.Builder()
-            .setPersistenceEnabled(true)
-            .build()
-
-        // Configuración para botón de selección de imagen
         val buttonImage: ImageButton = findViewById(R.id.fotoComunidad)
         buttonImage.setOnClickListener {
             pickMedia.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
         }
 
-        val button = findViewById<ImageButton>(R.id.iniciarlogin)
-        button.setOnClickListener {
-            val intent = Intent(this, Menu::class.java)
-            startActivity(intent)
+        findViewById<ImageButton>(R.id.iniciarlogin).setOnClickListener {
+            startActivity(Intent(this, Menu::class.java))
         }
 
-        val nameEditText = findViewById<EditText>(R.id.editTextText1)
-        val sportEditText = findViewById<EditText>(R.id.editTextText2)
-        val descriptionEditText = findViewById<EditText>(R.id.editTextText3)
-        val createButton = findViewById<Button>(R.id.button2)
-
-        createButton.setOnClickListener {
-            val name = nameEditText.text.toString()
-            val sport = sportEditText.text.toString()
-            val description = descriptionEditText.text.toString()
+        val nameEditText = findViewById<EditText>(R.id.nombre)
+        val sportEditText = findViewById<EditText>(R.id.deporte)
+        val descriptionEditText = findViewById<EditText>(R.id.editTextText99)
+        findViewById<Button>(R.id.crearComunidad).setOnClickListener {
+            val name = nameEditText.text.toString().trim()
+            val sport = sportEditText.text.toString().trim()
+            val description = descriptionEditText.text.toString().trim()
 
             if (name.isNotEmpty() && sport.isNotEmpty() && description.isNotEmpty()) {
-                Log.d("MainActivity", "Datos: Nombre=$name, Deporte=$sport, Descripción=$description")
-                val intent = Intent(this, Tus_Comunidades::class.java)
-                intent.putExtra("EXTRA_NAME", name)
-                intent.putExtra("EXTRA_SPORT", sport)
-                intent.putExtra("EXTRA_DESCRIPTION", description)
-                startActivity(intent)
+                Log.d("CrearComunidad", "Datos: Nombre=$name, Deporte=$sport, Descripción=$description")
+                Intent(this, Tus_Comunidades::class.java).apply {
+                    putExtra("EXTRA_NAME", name)
+                    putExtra("EXTRA_SPORT", sport)
+                    putExtra("EXTRA_DESCRIPTION", description)
+                }.also { startActivity(it) }
             } else {
                 Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+
+    private fun initializeFirebase() {
+        auth = FirebaseAuth.getInstance()
+        db = FirebaseFirestore.getInstance().apply {
+            firestoreSettings = FirebaseFirestoreSettings.Builder()
+                .setPersistenceEnabled(true)
+                .build()
+        }
+        storage = FirebaseStorage.getInstance()
     }
 
     // Método para redimensionar y subir la imagen a Firebase Storage
@@ -101,8 +95,9 @@ class Crear_Comunidad : AppCompatActivity() {
             val originalBitmap = BitmapFactory.decodeStream(inputStream)
             val resizedBitmap = Bitmap.createScaledBitmap(originalBitmap, 250, 250, true)
 
-            val baos = ByteArrayOutputStream()
-            resizedBitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos)
+            val baos = ByteArrayOutputStream().apply {
+                resizedBitmap.compress(Bitmap.CompressFormat.JPEG, 100, this)
+            }
             val imageData = baos.toByteArray()
 
             val imageRef = storage.reference.child("profile_images/$userId/${UUID.randomUUID()}.jpg")

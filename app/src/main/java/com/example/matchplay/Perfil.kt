@@ -61,7 +61,7 @@ class Perfil : AppCompatActivity() {
         loadUserName()
 
         // Configuración para botón de selección de imagen
-        val buttonImage: ImageButton = findViewById(R.id.imageButton5)
+        val buttonImage: ImageButton = findViewById(R.id.seleccindeImagen)
         buttonImage.setOnClickListener {
             pickMedia.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
         }
@@ -77,13 +77,13 @@ class Perfil : AppCompatActivity() {
         }
 
         // Configuración para botón de retroceso
-        findViewById<ImageButton>(R.id.imageButton2).setOnClickListener {
+        findViewById<ImageButton>(R.id.flechaRetroceder).setOnClickListener {
             startActivity(Intent(this, Menu::class.java))
             finish()
         }
 
         // Configuración para botón de eliminar cuenta
-        findViewById<ImageButton>(R.id.imageButton3).setOnClickListener {
+        findViewById<ImageButton>(R.id.eliminarCuenta).setOnClickListener {
             auth.currentUser?.let { deleteAccount(it) }
         }
     }
@@ -165,7 +165,7 @@ class Perfil : AppCompatActivity() {
                 val imageUrl = document.getString("profileImageUrl")
                 if (imageUrl != null) {
                     // Usa Glide para cargar la imagen en el ImageButton
-                    val buttonImage: ImageButton = findViewById(R.id.imageButton5)
+                    val buttonImage: ImageButton = findViewById(R.id.seleccindeImagen)
                     Glide.with(this)
                         .load(imageUrl)
                         .placeholder(R.drawable.placeholder_image) // Imagen de placeholder
