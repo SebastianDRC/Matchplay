@@ -34,7 +34,7 @@ class Recyclercominidad : AppCompatActivity() {
         rv.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(this@Recyclercominidad)
-            adapter = ControlPost(this@Recyclercominidad, posts)}
+            adapter = C_Post(this@Recyclercominidad, posts)}
         }
 
 
