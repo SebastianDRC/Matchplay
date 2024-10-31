@@ -214,7 +214,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/fotoComunidad"
         android:layout_width="142dp"
         android:layout_height="123dp"
         android:layout_marginTop="8dp"
@@ -230,7 +230,7 @@
         android:backgroundTint="#C1D5ED"
         android:text="Seleccione su imagen"
         android:textSize="8sp"
-        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/fotoComunidad"
         tools:layout_editor_absoluteX="144dp" />
 
 
