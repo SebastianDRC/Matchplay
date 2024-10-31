@@ -9,18 +9,22 @@
     tools:context=".Crear_cuenta">
 
     <!-- Fondo de pantalla completo -->
+
+    <!-- Fondo para el nombre -->
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/perfil_fondo"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <!-- Fondo para el nombre -->
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="0dp"
@@ -45,28 +49,31 @@
         android:layout_marginStart="30dp"/>
 
     <!-- Botón de cerrar sesión -->
+
+    <!-- Botón de eliminar cuenta -->
+
+    <!-- Botón de retroceso -->
+
     <ImageButton
         android:id="@+id/imageButtoncerrar_sesion"
         android:layout_width="151dp"
         android:layout_height="48dp"
-        app:srcCompat="@drawable/cerrar_sesi_n"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="20dp"/>
+        app:srcCompat="@drawable/cerrar_sesi_n" />
 
-    <!-- Botón de eliminar cuenta -->
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="163dp"
         android:layout_height="48dp"
-        app:srcCompat="@drawable/eliminar_cuenta"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="20dp"/>
+        app:srcCompat="@drawable/eliminar_cuenta" />
 
-    <!-- Botón de retroceso -->
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
@@ -78,14 +85,28 @@
         android:layout_marginStart="20dp"/>
 
     <!-- Botón de selección de imagen -->
+
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/person"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="276dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="150dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/person" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="Bienvenido a tú perfil"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
