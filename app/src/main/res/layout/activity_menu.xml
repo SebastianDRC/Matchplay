@@ -5,6 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#941212"
+    android:backgroundTint="#7C213DF3"
+    android:foregroundTint="#781616"
     android:scrollbarDefaultDelayBeforeFade="20"
     android:scrollbarFadeDuration="20">
 
@@ -17,8 +20,10 @@
         android:src="@drawable/fondo_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -144,18 +149,17 @@
     <!-- Tarjeta decorativa transparente -->
 
 
-
     <!-- Layout interno -->
 
     <!-- Imagen inferior -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="133dp"
-        android:layout_height="123dp"
+        android:layout_width="138dp"
+        android:layout_height="116dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="56dp"
         android:background="#56000000"
-        android:backgroundTint="#1043C3"
+        android:backgroundTint="#001043C3"
         android:foregroundTint="#A91919"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView16">
@@ -171,67 +175,62 @@
         <!-- Texto de ejemplo -->
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewCommunity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#DC0606">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardViewCommunity"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="105dp"
+                android:background="#D95F5F"
+                android:backgroundTint="#000000"
+                android:foregroundTint="#B30C0C">
 
                 <TextView
                     android:id="@+id/textView122"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:text="Nombre"
-                    android:textColor="#F8F8F8"
+                    android:textColor="#FFFCFC"
                     android:textSize="18sp"
                     android:textStyle="bold|italic"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.62"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <EditText
-                    android:id="@+id/editTextDate"
-                    android:layout_width="72dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginTop="56dp"
-                    android:ems="10"
-                    android:hint="Fecha"
-                    android:inputType="date"
-                    android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF"
-                    android:textColorLink="#FDFCFC"
-                    android:textSize="15dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView122" />
-
-                <ImageButton
-                    android:id="@+id/imageButton9"
-                    android:layout_width="39dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginBottom="48dp"
-                    android:backgroundTint="#00925555"
-                    android:tint="#2196F3"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/editTextDate"
-                    app:srcCompat="@android:drawable/ic_input_add" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.086" />
 
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="78dp"
                     android:text="Usuario"
-                    android:textColor="#F4EFEF"
+                    android:textColor="#6D6767"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="73dp"
+                    android:text="Deporte"
+                    android:textColor="#215CF3"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>

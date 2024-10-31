@@ -39,8 +39,8 @@ class C_Post(
         // holder.imagen1.setImageDrawable(post.imagen)
 
         // Formatear y asignar la fecha
-        val sdf = SimpleDateFormat("dd/M/yyyy")
-        holder.layout.findViewById<TextView>(R.id.editTextDate).text = sdf.format(post.date)
+        //val sdf = SimpleDateFormat("dd/M/yyyy")
+        //holder.layout.findViewById<TextView>(R.id.editTextDate).text = sdf.format(post.date)
 
         // Asegúrate de usar estos elementos según lo necesites
         holder.layout.findViewById<TextView>(R.id.textView).text = post.username // Ejemplo de asignación

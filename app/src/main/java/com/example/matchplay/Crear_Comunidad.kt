@@ -19,13 +19,47 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import java.util.UUID
 class Crear_Comunidad : AppCompatActivity() {
-    private val firestore = FirebaseFirestore.getInstance()
-    private val storageReference = FirebaseStorage.getInstance().reference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_comunidad)
 
+        val etCommunityName = findViewById<EditText>(R.id.editTextText1)
+        val etSport = findViewById<EditText>(R.id.editTextText2)
+        val etUsername = findViewById<EditText>(R.id.editTextText3)
+        val btnCreateCommunity = findViewById<Button>(R.id.button2)
+
+        btnCreateCommunity.setOnClickListener {
+            val communityName = etCommunityName.text.toString()
+            val sport = etSport.text.toString()
+            val username = etUsername.text.toString()
+
+            val intent = Intent(this, Menu::class.java).apply {
+                putExtra("COMMUNITY_NAME", communityName)
+                putExtra("SPORT", sport)
+                putExtra("USERNAME", username)
+            }
+            startActivity(intent)
+        }
+    }
 
 
-    }}
+
+
+   // private val firestore = FirebaseFirestore.getInstance()
+    //private val storageReference = FirebaseStorage.getInstance().reference
+
+    //override fun onCreate(savedInstanceState: Bundle?) {
+     //   super.onCreate(savedInstanceState)
+      //  setContentView(R.layout.activity_crear_comunidad)
+
+       // val button = findViewById<ImageButton>(R.id.iniciarlogin25)
+
+       // button.setOnClickListener {
+       //     val intent = Intent(this, Menu::class.java)
+         //   startActivity(intent)
+
+      //  }
+
+
+    }//}

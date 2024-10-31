@@ -18,7 +18,12 @@ class Busqueda : AppCompatActivity() {
         button.setOnClickListener {
             val intent = Intent(this, Menu::class.java)
             startActivity(intent)
+        }
+            val buttoni = findViewById<ImageButton>(R.id.devolverlogin)
 
+            button.setOnClickListener {
+                val intent = Intent(this, Menu::class.java)
+                startActivity(intent)
         }
 
     }

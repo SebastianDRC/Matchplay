@@ -21,17 +21,17 @@ class Tus_Comunidades : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.tus_comunidades)
 
-        val button = findViewById<ImageButton>(R.id.iniciarlogin25)
+        val button = findViewById<ImageButton>(R.id.iniciar255)
 
         button.setOnClickListener {
             val intent = Intent(this, Menu::class.java)
             startActivity(intent)
-
         }
-        val buttone = findViewById<ImageButton>(R.id.imageButton2)
+        val button1 = findViewById<ImageButton>(R.id.imageButton2)
 
-        buttone.setOnClickListener {
+        button1.setOnClickListener {
             val intent = Intent(this, Crear_Comunidad::class.java)
             startActivity(intent)
+
         }
     }}
