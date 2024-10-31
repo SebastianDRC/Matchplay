@@ -8,9 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".Crear_cuenta">
 
-    <!-- Fondo de pantalla completo -->
-
-    <!-- Fondo para el nombre -->
 
     <ImageView
         android:id="@+id/imageView5"

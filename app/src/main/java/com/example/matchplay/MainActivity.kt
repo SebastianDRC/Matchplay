@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        if (auth.currentUser !=null)startApp()
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
@@ -31,13 +33,17 @@ class MainActivity : AppCompatActivity() {
             val password = password.text.toString()
             auth.signInWithEmailAndPassword(email, password)
                 .addOnSuccessListener {
-                    val intent = Intent(this, Menu::class.java)
-                    startActivity(intent)
-                    finish()
+                    startApp()
                 }
                 .addOnFailureListener {
                     Utils.showError(this,it.message.toString())
                 }
         }
+    }
+
+    private fun startApp(){
+        val intent = Intent(this, Menu::class.java)
+        startActivity(intent)
+        finish()
     }
 }
