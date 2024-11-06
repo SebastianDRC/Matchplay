@@ -13,7 +13,17 @@ class Busqueda : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_busqueda)
+        val button = findViewById<ImageButton>(R.id.devolverlogin)
 
+        button.setOnClickListener {
+            val intent = Intent(this, Menu::class.java)
+            startActivity(intent)
+        }
+
+        button.setOnClickListener {
+            val intent = Intent(this, Menu::class.java)
+            startActivity(intent)
+        }
 
     }
 }
