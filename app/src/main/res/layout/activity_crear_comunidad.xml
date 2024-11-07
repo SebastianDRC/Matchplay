@@ -9,6 +9,7 @@
     android:background="@drawable/crea_comunidad"
     tools:context=".Crear_Comunidad">
 
+    <!-- Fondo de la imagen -->
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
@@ -16,10 +17,9 @@
         android:scaleType="centerCrop"
         android:src="@drawable/crea_comunidad"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Título de la pantalla -->
     <TextView
         android:id="@+id/comunidadTextView"
         android:layout_width="wrap_content"
@@ -27,12 +27,13 @@
         android:text="Crea tu comunidad"
         android:textColor="@color/white"
         android:textSize="35sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="72dp"
-        android:textStyle="bold"/>
+        android:layout_marginTop="72dp"/>
 
+    <!-- Botón de regreso -->
     <ImageButton
         android:id="@+id/iniciarlogin"
         android:layout_width="46dp"
@@ -44,6 +45,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"/>
 
+    <!-- Botón para seleccionar la imagen de la comunidad -->
     <ImageButton
         android:id="@+id/fotoComunidad"
         android:layout_width="142dp"
@@ -54,6 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"/>
 
+    <!-- Texto: "Selecciona una imagen" -->
     <TextView
         android:id="@+id/seleccionaTextView"
         android:layout_width="wrap_content"
@@ -66,18 +69,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
 
+    <!-- Campo de entrada para "Nombre de la Comunidad" -->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre"
         android:textColor="#EFEDED"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/seleccionaTextView"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="56dp"
-        android:textStyle="bold"
-        android:textSize="18sp"/>
+        android:layout_marginStart="56dp"/>
 
     <EditText
         android:id="@+id/nombre"
@@ -88,12 +92,13 @@
         android:layout_marginEnd="56dp"
         android:backgroundTint="#00FFFFFF"
         android:hint="Nombre de la Comunidad"
-        android:textColorHint="#F2EFEF"
+        android:textColorHint="#FAF5F5"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:backgroundTint="#E7E7E7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+    <!-- Campo de entrada para "Deporte" -->
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
@@ -114,79 +119,82 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="56dp"
-        android:backgroundTint="#00C81111"
+        android:backgroundTint="#00FFFFFF"
         android:hint="Deporte de la Comunidad"
         android:textColorHint="#FBF9F9"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:backgroundTint="#E7E7E7"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
+    <!-- Campo de entrada para "Nombre Autor" -->
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre Autor"
         android:textColor="#EFEDED"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/deporte"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="56dp"
-        android:textStyle="bold"
-        android:textSize="18sp"/>
+        android:layout_marginStart="56dp"/>
 
     <EditText
         android:id="@+id/nombreAutor"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#00BD0606"
-        android:hint="Nombre del Autor"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="56dp"
-        android:layout_marginEnd="56dp"
         android:layout_marginTop="8dp"
-        tools:backgroundTint="#E7E7E7"
-        android:textColorHint="#F2EFEF"/>
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#00FFFFFF"
+        android:hint="Nombre del Autor"
+        android:textColorHint="#F2EFEF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
+    <!-- Campo de entrada para "Descripción" -->
     <TextView
         android:id="@+id/textView55"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Descripción para la comunidad"
         android:textColor="#EFEDED"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/nombreAutor"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="56dp"
-        android:textStyle="bold"
-        android:textSize="18sp"/>
+        android:layout_marginStart="56dp"/>
 
     <EditText
-        android:id="@+id/editTextText99"
+        android:id="@+id/descripcionComunidad"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#00BD0606"
-        android:hint="Descripción de la Comunidad"
-        app:layout_constraintTop_toBottomOf="@+id/textView55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="56dp"
-        android:layout_marginEnd="56dp"
         android:layout_marginTop="8dp"
-        tools:backgroundTint="#E7E7E7"
-        android:textColorHint="#F2EFEF"/>
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#00FFFFFF"
+        android:hint="Descripción de la Comunidad"
+        android:textColorHint="#F2EFEF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
+    <!-- Botón de "Crear" -->
     <Button
         android:id="@+id/crearComunidad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:text="Crear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText99" />
+        app:layout_constraintTop_toBottomOf="@+id/descripcionComunidad" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
