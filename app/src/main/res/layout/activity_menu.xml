@@ -142,16 +142,6 @@
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="?attr/homeAsUpIndicator" />
 
-    <!-- Imagen central -->
-
-    <!-- Botón adicional -->
-
-    <!-- Tarjeta decorativa transparente -->
-
-
-    <!-- Layout interno -->
-
-    <!-- Imagen inferior -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="138dp"
@@ -164,27 +154,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView16">
 
-        <!-- Nombre de usuario -->
-
-        <!-- Campo de fecha -->
-
-        <!-- Botón adicional con icono -->
-
-        <!-- Imagen del perfil -->
-
-        <!-- Texto de ejemplo -->
-
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewCommunity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#DC0606">
+            app:cardBackgroundColor="#00FFFFFF"> <!-- Fondo transparente -->
 
+            <!-- ImageView para el fondo del post -->
+            <ImageView
+                android:id="@+id/postBackgroundImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:alpha="0.8" /> <!-- Transparencia para mejorar legibilidad -->
+
+            <!-- Contenido del post -->
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/cardViewCommunity"
                 android:layout_width="match_parent"
                 android:layout_height="105dp"
-                android:background="#D95F5F"
                 android:backgroundTint="#000000"
                 android:foregroundTint="#B30C0C">
 
