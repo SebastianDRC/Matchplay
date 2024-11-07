@@ -14,22 +14,7 @@
         android:theme="@style/Theme.Matchplay"
         tools:targetApi="31">
         <activity
-            android:name=".Control"
-            android:exported="false" />
-        <activity
-            android:name=".GroupAdapter"
-            android:exported="false" />
-        <activity
-            android:name=".Counidad_nueva"
-            android:exported="false" />
-        <activity
-            android:name=".Comunidades_nuevas"
-            android:exported="false" />
-        <activity
             android:name=".Recyclercominidad"
-            android:exported="false" />
-        <activity
-            android:name=".comunidadrecycler"
             android:exported="false" />
         <activity
             android:name=".Busqueda"

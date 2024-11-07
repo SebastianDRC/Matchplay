@@ -173,7 +173,6 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="105dp"
-                android:backgroundTint="#000000"
                 android:foregroundTint="#B30C0C">
 
                 <TextView
